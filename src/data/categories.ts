@@ -20,32 +20,32 @@ export const featuredCategories: Category[] = [
 export const categories: Category[] = [
   { 
     name: 'Jars & Containers', 
-    image: 'jars.jpg',
+    image: 'img/jars.jpg',
     href: 'https://www.swirlazzo.be/shop/jars'
   },
   { 
     name: 'Card Holders', 
-    image: 'card-holders.jpg',
+    image: 'img/card-holders.jpg',
     href: 'https://www.swirlazzo.be/shop/card-holders'
   },
   { 
     name: 'Decorative Trays', 
-    image: 'trays.jpg',
+    image: 'img/trays.jpg',
     href: 'https://www.swirlazzo.be/shop/decorative-trays'
   },
   { 
     name: 'Coasters', 
-    image: 'coasters.jpg',
+    image: 'img/coasters.jpg',
     href: 'https://www.swirlazzo.be/shop/coasters'
   },
   { 
     name: 'Wall Art', 
-    image: 'wall-art.jpg',
+    image: 'img/wall-art.jpg',
     href: 'https://www.swirlazzo.be/shop/wall-art'
   },
   { 
     name: 'Custom Pieces', 
-    image: 'custom.jpg',
+    image: 'img/custom.jpg',
     href: 'https://www.swirlazzo.be/shop/custom-pieces'
   }
 ];
