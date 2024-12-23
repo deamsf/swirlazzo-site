@@ -5,7 +5,6 @@ import { CategoryGrid } from './components/CategoryGrid';
 import { TestimonialGrid } from './components/TestimonialGrid';
 import { AboutSection } from './components/AboutSection';
 import { Footer } from './components/Footer';
-import { categories } from './data/categories';
 import { testimonials } from './data/testimonials';
 
 export default function App() {
