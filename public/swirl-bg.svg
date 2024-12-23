@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <path d="M100,0 C130,0 150,20 150,50 C150,80 130,100 100,100 C70,100 50,80 50,50 C50,20 70,0 100,0 Z" 
+        fill="currentColor" opacity="0.1">
+    <animateTransform attributeName="transform"
+                      type="rotate"
+                      from="0 100 100"
+                      to="360 100 100"
+                      dur="30s"
+                      repeatCount="indefinite"/>
+  </path>
+  <path d="M100,50 C115,50 125,60 125,75 C125,90 115,100 100,100 C85,100 75,90 75,75 C75,60 85,50 100,50 Z" 
+        fill="currentColor" opacity="0.1">
+    <animateTransform attributeName="transform"
+                      type="rotate"
+                      from="360 100 100"
+                      to="0 100 100"
+                      dur="20s"
+                      repeatCount="indefinite"/>
+  </path>
+</svg>
