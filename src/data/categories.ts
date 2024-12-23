@@ -3,14 +3,14 @@ import type { Category } from '../types/category';
 export const featuredCategories: Category[] = [
   {
     name: "New Arrivalsxy",
-    image: "https://img.freepik.com/free-photo/decorative-vase-with-dried-flowers_23-2149835514.jpg",
+    image: "https://img.freepik.com/free-photo/beautiful-hand-made-objects_23-2148732441.jpg",
     icon: "FaStar",
     href: "https://www.swirlazzo.be/shop/new-arrivals",
     featured: true
   },
   {
     name: "Best Sellers",
-    image: "https://img.freepik.com/free-photo/modern-room-with-nice-decoration_23-2149352250.jpg",
+    image: "https://img.freepik.com/free-photo/decorative-vase-with-dried-flowers_23-2149835514.jpg",
     icon: "FaRocket",
     href: "https://www.swirlazzo.be/shop/best-sellers",
     featured: true

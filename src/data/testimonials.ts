@@ -21,12 +21,5 @@ export const testimonials: Testimonial[] = [
     quote: "The custom wall art piece exceeded my expectations. It perfectly matches my interior and I get compliments from every visitor.",
     href: "https://www.google.com/emma",
     product: "Custom Wall Art"
-  },
-  {
-  name: "Jenny Fay",
-  image: "https://img.freepik.com/free-photo/minimal-living-room-interior-design_23-2148994879.jpg",
-  quote: "The custom wall art piece exceeded my expectations. It perfectly matches my interior and I get compliments from every visitor.",
-  href: "https://www.google.com/jenny",
-  product: "Custom Wall Art"
   }
 ];
