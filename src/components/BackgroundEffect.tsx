@@ -1,5 +1,3 @@
-import React from 'react';
-
 export function BackgroundEffect() {
   return (
     <div className="fixed inset-0 -z-20 overflow-hidden">

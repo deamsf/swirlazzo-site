@@ -1,4 +1,3 @@
-import { FaInstagram, FaShoppingBag } from 'react-icons/fa';
 import { BackgroundEffect } from './components/BackgroundEffect';
 import { Navbar } from './components/Navbar';
 import { HeroSlider } from './components/HeroSlider';
@@ -26,7 +25,7 @@ export default function App() {
         <h2 className="text-3xl font-bold text-center text-swirlazzo-teal mb-8">
           Discover Our Collections
         </h2>
-        <CategoryGrid categories={categories} />
+        <CategoryGrid />
       </section>
 
       <section
