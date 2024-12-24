@@ -14,10 +14,7 @@ export function AboutSection() {
         />
         
         <div className="aspect-square rounded-full overflow-hidden border-4 border-swirlazzo-teal relative z-10">
-          {/* Placeholder div until image is available */}
-          <div className="w-full h-full bg-swirlazzo-lightTeal bg-opacity-30 flex items-center justify-center">
-            <span className="text-swirlazzo-teal">Artist Image</span>
-          </div>
+          <img src="./src/img/artist/kh.jpg" alt="Katrien" className="w-full h-full object-cover"/>
         </div>
       </div>
       <div className="md:col-span-8 prose prose-lg">
