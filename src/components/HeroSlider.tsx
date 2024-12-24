@@ -4,15 +4,15 @@ import { FaChevronDown, FaShoppingBag, FaInstagram } from 'react-icons/fa';
 const slides = [
   {
     image: 'https://img.freepik.com/free-photo/white-modern-vases-arrangement_23-2149835516.jpg',
-    alt: 'Handcrafted gypsum decorative items'
+    alt: 'Handgemaakte gipsporseleinen potjes'
   },
   {
     image: 'https://img.freepik.com/premium-photo/vase-table-with-wheat-interior-design-with-space-letters-3d-render_713888-2356.jpg',
-    alt: 'Elegant gypsum containers'
+    alt: 'Elegante gipsporseleinen vaasjes'
   },
   {
     image: 'https://img.freepik.com/premium-photo/modern-white-ceramic-vase-with-dry-lagurus-ovatus-grass-marble-tray-vintage-wooden-bench_713888-1049.jpg',
-    alt: 'Beautiful gypsum art pieces'
+    alt: 'Prachtige gipsen houdertjes'
   }
 ];
 
@@ -55,24 +55,24 @@ export function HeroSlider() {
             Swirlazzo
           </h1>
           <p className="text-2xl sm:text-3xl md:text-4xl text-swirlazzo-pink font-noto mb-8 sm:mb-12 tracking-wide">
-            Handcrafted Gypsum Art That Brings Your Space to Life
+          Handgemaakte decoratie in gips die je ruimte tot leven brengt
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-12 sm:mb-16">
             <a
               href="https://instagram.com/swirlazzo"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="bg-swirlazzo-pink hover:bg-swirlazzo-pink/90 text-white px-6 sm:px-8 py-3 rounded-full flex items-center justify-center gap-2 transition-colors"
             >
               <FaInstagram size={20} />
-              Follow Us
+              Volg ons
             </a>
             <a
               href="https://www.swirlazzo.be/shop"
               className="bg-swirlazzo-teal hover:bg-swirlazzo-teal/90 text-white px-6 sm:px-8 py-3 rounded-full flex items-center justify-center gap-2 transition-colors"
             >
               <FaShoppingBag size={20} />
-              Shop Now
+              Shop nu
             </a>
           </div>
         </div>

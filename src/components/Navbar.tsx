@@ -35,7 +35,7 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <img src="/logo.png" alt="Swirlazzo" className="h-12 w-auto" />
+            <img src="/img/logo.png" alt="Swirlazzo" className="h-12 w-auto" />
           </div>
 
           {/* Desktop Navigation */}
@@ -44,7 +44,7 @@ export function Navbar() {
               onClick={() => scrollToSection('categories')}
               className="text-swirlazzo-teal hover:text-swirlazzo-pink transition-colors"
             >
-              Collections
+              Collecties
             </button>
             <button 
               onClick={() => scrollToSection('testimonials')}
@@ -56,7 +56,7 @@ export function Navbar() {
               onClick={() => scrollToSection('aboutsection')}
               className="text-swirlazzo-teal hover:text-swirlazzo-pink transition-colors"
             >
-              About
+              Over mij
             </button>
             <a
               href="https://instagram.com/swirlazzo"
@@ -87,7 +87,7 @@ export function Navbar() {
                 onClick={() => scrollToSection('categories')}
                 className="text-swirlazzo-teal hover:text-swirlazzo-pink transition-colors"
               >
-                Collections
+                Collecties
               </button>
               <button 
                 onClick={() => scrollToSection('testimonials')}
@@ -99,7 +99,7 @@ export function Navbar() {
                 onClick={() => scrollToSection('aboutsection')}
                 className="text-swirlazzo-teal hover:text-swirlazzo-pink transition-colors"
               >
-                About
+                Over mij
               </button>
               <a
                 href="https://instagram.com/swirlazzo"

@@ -22,7 +22,7 @@ export default function App() {
         className="py-12 px-4 sm:px-6 lg:px-8 bg-white bg-opacity-90"
       >
         <h2 className="text-3xl font-bold text-center text-swirlazzo-teal mb-8">
-          Discover Our Collections
+          Ontdek onze collectie
         </h2>
         <CategoryGrid />
       </section>
@@ -32,7 +32,7 @@ export default function App() {
         className="py-16 px-4 sm:px-6 lg:px-8 bg-swirlazzo-cream bg-opacity-20"
       >
         <h2 className="text-3xl font-bold text-center text-swirlazzo-teal mb-8">
-          What Our Customers Say
+          Dit vinden zij
         </h2>
         <TestimonialGrid testimonials={testimonials} />
       </section>

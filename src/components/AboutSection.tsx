@@ -18,18 +18,11 @@ export function AboutSection() {
         </div>
       </div>
       <div className="md:col-span-8 prose prose-lg">
-        <h2 className="text-3xl font-bold text-swirlazzo-teal mb-8">About the Artist</h2>
+        <h2 className="text-3xl font-bold text-swirlazzo-teal mb-8">Over mij</h2>
         <p className="mb-6 text-gray-700">
-          Hello! I'm the creative soul behind Swirlazzo, where each piece is carefully
-          handcrafted with love and attention to detail. My passion for creating unique
-          gypsum decorative objects started when I discovered the beautiful possibilities
-          of combining traditional craftsmanship with modern design.
-        </p>
+        Hallo! Ik ben de creatieveling achter Swirlazzo, waar elk stuk zorgvuldig met de hand wordt gemaakt met liefde en aandacht voor detail. Mijn passie voor het creëren van unieke gipsen decoratieve objecten begon toen ik de prachtige mogelijkheden ontdekte van het combineren van traditioneel vakmanschap met modern design.        </p>
         <p className="text-gray-700">
-          Every Swirlazzo piece is inspired by the elegant swirls of terrazzo patterns
-          and created to bring a touch of artisanal beauty to your space. Each item is
-          unique, just like the homes they're destined to enhance.
-        </p>
+        Elk Swirlazzo-object is geïnspireerd op de elegante wervelingen van terrazzopatronen en gemaakt om een vleugje ambachtelijke schoonheid in je interieur te brengen. Elk item is uniek, net als de huizen die ze zullen verfraaien.        </p>
       </div>
     </div>
   );
