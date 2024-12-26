@@ -68,7 +68,7 @@ export function HeroSlider() {
               Volg ons
             </a>
             <a
-              href="https://www.swirlazzo.be/shop"
+              href="https://shop.swirlazzo.be"
               className="bg-swirlazzo-teal hover:bg-swirlazzo-teal/90 text-white px-6 sm:px-8 py-3 rounded-full flex items-center justify-center gap-2 transition-colors"
             >
               <FaShoppingBag size={20} />
