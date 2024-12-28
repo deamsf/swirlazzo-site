@@ -11,11 +11,18 @@ export default {
       },
       colors: {
         'swirlazzo': {
-          pink: '#ff8fa3',
+        pink: '#ff8fa3',
           teal: '#4a9ca8',
           lightTeal: '#7fd1d9',
           cream: '#ffe5d0',
-          coral: '#ffada7',
+          coral: '#ffada7', 
+          
+        //  pink: '#e63950',   
+        //  teal: '#4b9ea9',       
+        //  lightTeal: '#85d5df',  
+        //  cream: '#ffe8d5',     
+        //  coral: '#ffb1ac',     */ 
+
         }
       },
       backgroundImage: {

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FaChevronDown, FaShoppingBag, FaInstagram } from 'react-icons/fa';
+import styles from '../styles/TextHighlight.module.css';
 
 const slides = [
   {
@@ -42,7 +43,7 @@ export function HeroSlider() {
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
           style={{
-            backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(${slide.image})`,
+            backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(${slide.image})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
@@ -50,13 +51,23 @@ export function HeroSlider() {
         />
       ))}
       <div className="absolute inset-0 flex items-center justify-center px-4">
-        <div className="text-center">
+        <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-7xl sm:text-8xl md:text-9xl font-bold text-swirlazzo-teal mb-6 sm:mb-8 font-caveat tracking-wide">
             Swirlazzo
           </h1>
-          <p className="text-2xl sm:text-3xl md:text-4xl text-swirlazzo-pink font-noto mb-8 sm:mb-12 tracking-wide">
-          Handgemaakte decoratie in gips die je ruimte tot leven brengt
-          </p>
+          <div className={styles.highlightContainer}>
+            <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl text-swirlazzo-pink font-noto mb-8 sm:mb-12 tracking-wide relative z-10">
+              <span className={styles.highlightSpan}>
+                Handgemaakte decoratie in gips
+                <span className={`${styles.highlightEffect} ${styles.highlightEffect1}`} />
+              </span>
+              <br />
+              <span className={styles.highlightSpan}>
+                die je ruimte tot leven brengt
+                <span className={`${styles.highlightEffect} ${styles.highlightEffect2}`} />
+              </span>
+            </p>
+          </div>
           <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-12 sm:mb-16">
             <a
               href="https://instagram.com/swirlazzo"

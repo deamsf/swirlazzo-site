@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import { FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaInstagram } from 'react-icons/fa';
+import styles from '../styles/NavHighlight.module.css';
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,48 +29,58 @@ export function Navbar() {
     }
   };
 
+  const NavItem = ({ children, onClick }: { children: React.ReactNode; onClick?: () => void }) => (
+    <button onClick={onClick} className="text-lg">
+      <span className={styles.navHighlightSpan}>
+        <span className="text-lg text-swirlazzo-teal">
+          {children}
+        </span>
+        <span className={styles.navHighlightEffect} />
+      </span>
+    </button>
+  );
+
+  const InstagramLink = () => (
+    <a
+      href="https://instagram.com/swirlazzo"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-lg"
+      aria-label="Visit our Instagram"
+    >
+      <span className={styles.navHighlightSpan}>
+        <span className={`${styles.instagramIcon} text-swirlazzo-pink`}>
+          <FaInstagram size={24} />
+        </span>
+        <span className={styles.navHighlightEffect} />
+      </span>
+    </a>
+  );
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white/95 shadow-md' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex justify-between items-center">
-          <div className="flex items-center">
-            <img src="/img/logo.png" alt="Swirlazzo" className="h-12 w-auto" />
+          <div className="flex items-center gap-3">
+            <img src="/swirlazzo-logo.svg" alt="" className="h-12 w-auto" />
+            <span className="text-3xl font-caveat text-swirlazzo-teal">Swirlazzo</span>
           </div>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
-            <button 
-              onClick={() => scrollToSection('categories')}
-              className="text-swirlazzo-teal hover:text-swirlazzo-pink transition-colors"
-            >
+          <div className="hidden md:flex items-center gap-8">
+            <NavItem onClick={() => scrollToSection('categories')}>
               Collecties
-            </button>
-            <button 
-              onClick={() => scrollToSection('testimonials')}
-              className="text-swirlazzo-teal hover:text-swirlazzo-pink transition-colors"
-            >
+            </NavItem>
+            <NavItem onClick={() => scrollToSection('testimonials')}>
               Testimonials
-            </button>
-            <button 
-              onClick={() => scrollToSection('aboutsection')}
-              className="text-swirlazzo-teal hover:text-swirlazzo-pink transition-colors"
-            >
+            </NavItem>
+            <NavItem onClick={() => scrollToSection('aboutsection')}>
               Over mij
-            </button>
-            <a
-              href="https://instagram.com/swirlazzo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-swirlazzo-pink hover:text-swirlazzo-teal transition-colors"
-              aria-label="Visit our Instagram"
-            >
-              <FaInstagram size={20} />
-            </a>
+            </NavItem>
+            <InstagramLink />
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden text-swirlazzo-teal"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -79,37 +90,19 @@ export function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 bg-white/95 shadow-lg py-4">
             <div className="flex flex-col items-center gap-4">
-              <button 
-                onClick={() => scrollToSection('categories')}
-                className="text-swirlazzo-teal hover:text-swirlazzo-pink transition-colors"
-              >
+              <NavItem onClick={() => scrollToSection('categories')}>
                 Collecties
-              </button>
-              <button 
-                onClick={() => scrollToSection('testimonials')}
-                className="text-swirlazzo-teal hover:text-swirlazzo-pink transition-colors"
-              >
+              </NavItem>
+              <NavItem onClick={() => scrollToSection('testimonials')}>
                 Testimonials
-              </button>
-              <button 
-                onClick={() => scrollToSection('aboutsection')}
-                className="text-swirlazzo-teal hover:text-swirlazzo-pink transition-colors"
-              >
+              </NavItem>
+              <NavItem onClick={() => scrollToSection('aboutsection')}>
                 Over mij
-              </button>
-              <a
-                href="https://instagram.com/swirlazzo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-swirlazzo-pink hover:text-swirlazzo-teal transition-colors"
-                aria-label="Visit our Instagram"
-              >
-                <FaInstagram size={20} />
-              </a>
+              </NavItem>
+              <InstagramLink />
             </div>
           </div>
         )}
