@@ -20,32 +20,32 @@ export const featuredCategories: Category[] = [
 export const categories: Category[] = [
   { 
     name: 'Potjes', 
-    image: '/img/coll/item1.jpg',
-    href: 'https://shop.swirlazzo.be/jars'
+    image: '/img/coll/potjes.jpg',
+    href: 'https://shop.swirlazzo.be/'
   },
   { 
     name: 'Vaasjes', 
-    image: '/img/coll/item4.jpg',
-    href: 'https://shop.swirlazzo.be/card-holders'
+    image: '/img/coll/vaasjes.jpg',
+    href: 'https://shop.swirlazzo.be/'
   },
   { 
     name: 'Schaaltjes', 
-    image: '/img/coll/item3.jpg',
-    href: 'https://shop.swirlazzo.be/decorative-trays'
+    image: '/img/coll/schaaltjes.jpg',
+    href: 'https://shop.swirlazzo.be/'
   },
-  { 
+  /* { 
     name: 'Onderzetters', 
-    image: '/img/coll/item2.jpg',
-    href: 'https://shop.swirlazzo.be/coasters'
-  },
+    image: '/img/coll/item4.jpg',
+    href: 'https://shop.swirlazzo.be/'
+  }, */
   { 
     name: 'Houdertjes', 
-    image: '/img/coll/item5.jpg',
-    href: 'https://shop.swirlazzo.be/wall-art'
+    image: '/img/coll/houdertjes.jpg',
+    href: 'https://shop.swirlazzo.be/'
   },
-  { 
+  /* { 
     name: 'Varia', 
     image: '/img/coll/item6.jpg',
-    href: 'https://shop.swirlazzo.be/custom-pieces'
-  }
+    href: 'https://shop.swirlazzo.be/'
+  } */
 ];

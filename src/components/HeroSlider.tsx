@@ -3,15 +3,15 @@ import { FaChevronDown, FaShoppingBag, FaInstagram } from 'react-icons/fa';
 
 const slides = [
   {
-    image: 'https://img.freepik.com/free-photo/white-modern-vases-arrangement_23-2149835516.jpg',
-    alt: 'Handgemaakte gipsporseleinen potjes'
+    image: '/img/heroslider/hele-collectie1.jpg',
+    alt: 'Handgemaakte gipsporseleinen artikelen'
   },
   {
-    image: 'https://img.freepik.com/premium-photo/vase-table-with-wheat-interior-design-with-space-letters-3d-render_713888-2356.jpg',
+    image: '/img/heroslider/hele-collectie2.jpg',
     alt: 'Elegante gipsporseleinen vaasjes'
   },
   {
-    image: 'https://img.freepik.com/premium-photo/modern-white-ceramic-vase-with-dry-lagurus-ovatus-grass-marble-tray-vintage-wooden-bench_713888-1049.jpg',
+    image: '/img/heroslider/hele-collectie3.jpg',
     alt: 'Prachtige gipsen houdertjes'
   }
 ];
@@ -42,7 +42,7 @@ export function HeroSlider() {
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
           style={{
-            backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), url(${slide.image})`,
+            backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(${slide.image})`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
