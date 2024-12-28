@@ -1,0 +1,30 @@
+.navHighlightSpan {
+  position: relative;
+  display: inline-block;
+  z-index: 10;
+  padding: 0.2em 0.4em;
+}
+
+.navHighlightEffect {
+  position: absolute;
+  inset: 0;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 4px;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  transform: rotate(-0.5deg) translate(0px, 0px);
+}
+
+.navHighlightSpan:hover .navHighlightEffect {
+  opacity: 1;
+}
+
+.instagramIcon {
+  transition: color 0.2s ease-in-out;
+}
+
+.navHighlightSpan:hover .instagramIcon {
+  color: #4a9ca8;
+}

@@ -1,0 +1,34 @@
+.highlightContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.highlightText {
+  position: relative;
+  z-index: 10;
+}
+
+.highlightSpan {
+  position: relative;
+  display: inline;
+}
+
+.highlightEffect {
+  position: absolute;
+  inset: 0;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 4px;
+  z-index: -1;
+  padding: 0.2em 0.4em;
+  left: -0.4em;
+  right: -0.4em;
+}
+
+.highlightEffect1 {
+  transform: rotate(-0.5deg) translate(2px, 1px);
+}
+
+.highlightEffect2 {
+  transform: rotate(-0.5deg) translate(0px, 0px);
+}
