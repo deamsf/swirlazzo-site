@@ -2,10 +2,10 @@ import { BackgroundEffect } from './components/BackgroundEffect';
 import { Navbar } from './components/Navbar';
 import { HeroSlider } from './components/HeroSlider';
 import { CategoryGrid } from './components/CategoryGrid';
-import { TestimonialGrid } from './components/TestimonialGrid';
+/* import { TestimonialGrid } from './components/TestimonialGrid'; */
 import { AboutSection } from './components/AboutSection';
 import { Footer } from './components/Footer';
-import { testimonials } from './data/testimonials';
+/* import { testimonials } from './data/testimonials'; */
 
 export default function App() {
   return (
