@@ -3,16 +3,16 @@ import type { Category } from '../types/category';
 export const featuredCategories: Category[] = [
   {
     name: "Nieuw binnen",
-    image: '/img/coll/item6.jpg',
+    image: '/img/coll/nieuwbinnen.jpeg',
     icon: "FaStar",
-    href: "https://www.swirlazzo.be/shop/new-arrivals",
+    href: "https://shop.swirlazzo.be",
     featured: true
   },
   {
     name: "Bestsellers",
     image: "/img/coll/item1.jpg",
     icon: "FaRocket",
-    href: "https://www.swirlazzo.be/shop/best-sellers",
+    href: "https://shop.swirlazzo.be",
     featured: true
   }
 ];

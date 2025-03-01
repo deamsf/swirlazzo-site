@@ -27,6 +27,7 @@ export default function App() {
         <CategoryGrid />
       </section>
 
+      {/*
       <section
         id="testimonials"
         className="py-16 px-4 sm:px-6 lg:px-8 bg-swirlazzo-cream bg-opacity-20"
@@ -36,6 +37,7 @@ export default function App() {
         </h2>
         <TestimonialGrid testimonials={testimonials} />
       </section>
+      */}
 
       <section
         id="aboutsection"
