@@ -1,0 +1,48 @@
+---
+import { Instagram, Facebook } from 'lucide-astro';
+import '../styles/footer.css';
+---
+
+<footer id="contact" class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-column brand-column">
+        <h3>Swirlazzo</h3>
+        <p>Handgemaakte keramiek en accessoires voor jouw interieur.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/swirlazzo" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <Instagram size={20} />
+          </a>
+          <a href="https://facebook.com/swirlazzo" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <Facebook size={20} />
+          </a>
+        </div>
+      </div>
+      <div class="footer-links-container">
+        <div class="footer-column">
+          <h3>Navigatie</h3>
+          <ul class="footer-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/collecties">Collecties</a></li>
+            <li><a href="#over-mij">Over mij</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Informatie</h3>
+          <ul class="footer-links">
+            <li><a href="/verzending">Verzending & Levering</a></li>
+            <li><a href="/retourneren">Retourneren</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/algemene-voorwaarden">Algemene Voorwaarden</a></li>
+            <li><a href="/faq">Veelgestelde Vragen</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {new Date().getFullYear()} Swirlazzo. Alle rechten voorbehouden.</p>
+    </div>
+  </div>
+</footer>

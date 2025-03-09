@@ -1,0 +1,23 @@
+---
+import { collections } from '../data/collections';
+import '../styles/collections.css';
+---
+
+<section id="collecties" class="collections section">
+  <div class="container">
+    <h2 class="section-title">Ontdek onze collectie</h2>
+    <div class="collections-grid">
+      {collections.map((collection, index) => (
+        <a href={collection.url} class={`collection-item item-${index + 1}`}>
+          <div class="collection-image">
+            <img src={collection.image} alt={collection.title} />
+          </div>
+          <div class="collection-overlay">
+            <div class="collection-icon">{collection.icon}</div>
+            <h3 class="collection-title">{collection.title}</h3>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+</section>
