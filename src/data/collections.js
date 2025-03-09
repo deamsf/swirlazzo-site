@@ -1,37 +1,37 @@
 export const collections = [
   {
     title: "Nieuw binnen",
-    image: "/images/collections/nieuw-binnen.jpg",
+    image: "/images/coll/nieuwbinnen.jpeg",
     url: "/collecties/nieuw-binnen",
     icon: "⭐"
   },
   {
     title: "Bestsellers",
-    image: "/images/collections/bestsellers.jpg",
+    image: "/images/coll/item1.jpg",
     url: "/collecties/bestsellers",
     icon: "🚀"
   },
   {
     title: "Potjes",
-    image: "/images/collections/potjes.jpg",
+    image: "/images/coll/potjes.jpg",
     url: "/collecties/potjes",
     icon: ""
   },
   {
     title: "Vaasjes",
-    image: "/images/collections/vaasjes.jpg",
+    image: "/images/coll/item1.jpg",
     url: "/collecties/vaasjes",
     icon: ""
   },
   {
     title: "Schaaltjes",
-    image: "/images/collections/schaaltjes.jpg",
+    image: "/images/coll/schaaltjes.jpg",
     url: "/collecties/schaaltjes",
     icon: ""
   },
   {
     title: "Houdertjes",
-    image: "/images/collections/houdertjes.jpg",
+    image: "/images/coll/item1.jpg",
     url: "/collecties/houdertjes",
     icon: ""
   }
