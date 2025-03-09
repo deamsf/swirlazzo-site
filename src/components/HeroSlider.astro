@@ -1,0 +1,67 @@
+---
+import { ShoppingCart, Instagram, ChevronDown } from 'lucide-astro';
+import '../styles/hero.css';
+---
+
+<section class="hero-slider">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="slide-image" style="background-image: url('/images/hero-1.jpg')"></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-image" style="background-image: url('/images/hero-2.jpg')"></div>
+      </div>
+      <div class="swiper-slide">
+        <div class="slide-image" style="background-image: url('/images/hero-3.jpg')"></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="slide-content">
+    <div class="slide-text">
+      <h1>Swirlazzo</h1>
+      <p class="highlighted-text">Handgemaakte decoratie in gips die je ruimte tot leven brengt</p>
+      <div class="slide-buttons">
+        <a href="https://shop.swirlazzo.be" class="btn btn-primary">
+          <ShoppingCart size={18} />
+          <span>Shop nu</span>
+        </a>
+        <a href="https://instagram.com/swirlazzo" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <Instagram size={18} />
+          <span>Volg ons</span>
+        </a>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  
+  <a href="#collecties" class="scroll-down" aria-label="Scroll down">
+    <ChevronDown size={24} />
+  </a>
+</section>
+
+<script>
+  import Swiper from 'swiper';
+  import { Autoplay, Pagination } from 'swiper/modules';
+  import 'swiper/css';
+  import 'swiper/css/pagination';
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const swiper = new Swiper('.swiper', {
+      modules: [Autoplay, Pagination],
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      speed: 800,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        bulletClass: 'swiper-pagination-bullet',
+        bulletActiveClass: 'swiper-pagination-bullet-active',
+      },
+    });
+  });
+</script>
